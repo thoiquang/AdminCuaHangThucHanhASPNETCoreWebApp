@@ -1,0 +1,150 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "SV22T1020714.BusinessLayers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SV22T1020714.DataLayers": "1.0.0",
+          "SV22T1020714.DomainModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SV22T1020714.BusinessLayers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SV22T1020714.BusinessLayers.dll": {}
+        }
+      },
+      "SV22T1020714.DataLayers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SV22T1020714.DomainModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SV22T1020714.DataLayers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SV22T1020714.DataLayers.dll": {}
+        }
+      },
+      "SV22T1020714.DomainModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/SV22T1020714.DomainModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SV22T1020714.DomainModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SV22T1020714.BusinessLayers/1.0.0": {
+      "type": "project",
+      "path": "../SV22T1020714.BusinessLayers/SV22T1020714.BusinessLayers.csproj",
+      "msbuildProject": "../SV22T1020714.BusinessLayers/SV22T1020714.BusinessLayers.csproj"
+    },
+    "SV22T1020714.DataLayers/1.0.0": {
+      "type": "project",
+      "path": "../SV22T1020714.DataLayers/SV22T1020714.DataLayers.csproj",
+      "msbuildProject": "../SV22T1020714.DataLayers/SV22T1020714.DataLayers.csproj"
+    },
+    "SV22T1020714.DomainModels/1.0.0": {
+      "type": "project",
+      "path": "../SV22T1020714.DomainModels/SV22T1020714.DomainModels.csproj",
+      "msbuildProject": "../SV22T1020714.DomainModels/SV22T1020714.DomainModels.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "SV22T1020714.BusinessLayers >= 1.0.0",
+      "SV22T1020714.DataLayers >= 1.0.0",
+      "SV22T1020714.DomainModels >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\dell\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\22T1020714.Admin.csproj",
+      "projectName": "22T1020714.Admin",
+      "projectPath": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\22T1020714.Admin.csproj",
+      "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
+      "outputPath": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\Visual Studio Projects\\SV22T1020714\\SV22T1020714.BusinessLayers\\SV22T1020714.BusinessLayers.csproj": {
+              "projectPath": "D:\\Visual Studio Projects\\SV22T1020714\\SV22T1020714.BusinessLayers\\SV22T1020714.BusinessLayers.csproj"
+            },
+            "D:\\Visual Studio Projects\\SV22T1020714\\SV22T1020714.DataLayers\\SV22T1020714.DataLayers.csproj": {
+              "projectPath": "D:\\Visual Studio Projects\\SV22T1020714\\SV22T1020714.DataLayers\\SV22T1020714.DataLayers.csproj"
+            },
+            "D:\\Visual Studio Projects\\SV22T1020714\\SV22T1020714.DomainModels\\SV22T1020714.DomainModels.csproj": {
+              "projectPath": "D:\\Visual Studio Projects\\SV22T1020714\\SV22T1020714.DomainModels\\SV22T1020714.DomainModels.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.309/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

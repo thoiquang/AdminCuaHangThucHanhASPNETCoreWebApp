@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Xóa loại hàng";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-12">
+        <div class="card card-outline card-danger">
+            <div class="card-header">
+                <h5 class="card-title mb-0 text-danger">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    Xác nhận xóa loại hàng
+                </h5>
+            </div>
+
+            <div class="card-body">
+                <div class="alert alert-warning">
+                    <i class="bi bi-info-circle me-1"></i>
+                    Bạn đang chuẩn bị xóa loại hàng sau. Hành động này
+                    <strong>không thể hoàn tác</strong>.
+                </div>
+
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th style="width: 200px;">Tên loại hàng</th>
+                            <td>Đồ uống</td>
+                        </tr>
+                        <tr>
+                            <th>Mô tả</th>
+                            <td>Các loại nước giải khát, nước ngọt, bia...</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <form method="post" class="d-flex justify-content-end">
+                    <!-- Ẩn ID loại hàng -->
+                    <input type="hidden" name="CategoryId" value="1" />
+
+                    <a href="~/Category" class="btn btn-secondary me-2">
+                        <i class="bi bi-arrow-left"></i>
+                        Quay lại
+                    </a>
+
+                    <button type="submit" class="btn btn-danger">
+                        <i class="bi bi-trash me-1"></i>
+                        Xác nhận xóa
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

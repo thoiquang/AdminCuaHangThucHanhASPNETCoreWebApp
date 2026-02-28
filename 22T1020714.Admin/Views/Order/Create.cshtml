@@ -1,0 +1,172 @@
+﻿@{
+    ViewBag.Title = "Lập đơn hàng";
+}
+
+<div class="row">
+    <!-- CỘT TRÁI: CHỌN HÀNG -->
+    <div class="col-lg-5">
+        <div class="card card-outline card-primary mb-3">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="bi bi-search me-2"></i>
+                    Lựa chọn hàng cần bán
+                </h6>
+            </div>
+
+            <div class="card-body">
+                <!-- Search -->
+                <div class="input-group mb-3">
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Nhập tên mặt hàng cần tìm">
+                    <button class="btn btn-primary">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <!-- ITEM -->
+                <div class="border rounded p-2 mb-3">
+                    <div class="row g-2 align-items-center">
+                        <div class="col-4">
+                            <img src="~/images/product.png"
+                                 class="img-fluid rounded border">
+                        </div>
+
+                        <div class="col-8">
+                            <strong>Macbook Pro 15'' M2 2023</strong>
+
+                            <div class="row mt-2">
+                                <div class="col-6">
+                                    <label class="form-label mb-0">Giá</label>
+                                    <input type="text"
+                                           class="form-control form-control-sm"
+                                           value="45.000.000">
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label mb-0">SL</label>
+                                    <input type="number"
+                                           class="form-control form-control-sm"
+                                           value="1">
+                                </div>
+                            </div>
+
+                            <button class="btn btn-sm btn-primary w-100 mt-2">
+                                <i class="bi bi-cart-plus"></i>
+                                Thêm vào giỏ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAGINATION -->
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-sm btn-outline-secondary">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CỘT PHẢI -->
+    <div class="col-lg-7">
+
+        <!-- DANH SÁCH HÀNG ĐÃ CHỌN -->
+        <div class="card card-outline card-success mb-3">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="bi bi-cart-check me-2"></i>
+                    Danh sách mặt hàng đã chọn
+                </h6>
+            </div>
+
+            <div class="card-body p-0">
+                <table class="table table-bordered mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Tên hàng</th>
+                            <th>ĐVT</th>
+                            <th>SL</th>
+                            <th>Giá</th>
+                            <th>Thành tiền</th>
+                            <th style="width:80px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Laptop HP Gaming VICTUS</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>23.990.000</td>
+                            <td>23.990.000</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button class="btn btn-sm btn-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="5" class="text-end">Tổng cộng:</th>
+                            <th colspan="2" class="text-danger fw-bold">
+                                71.970.000
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <!-- THÔNG TIN KHÁCH HÀNG -->
+        <div class="card card-outline card-info">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="bi bi-person-lines-fill me-2"></i>
+                    Thông tin khách hàng & nơi giao hàng
+                </h6>
+            </div>
+
+            <div class="card-body">
+                <form method="post">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Khách hàng</label>
+                            <select class="form-select">
+                                <option>-- Chọn khách hàng --</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tỉnh / Thành</label>
+                            <select class="form-select">
+                                <option>-- Chọn tỉnh/thành --</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label">Địa chỉ giao hàng</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-check-circle"></i>
+                            Lập đơn hàng
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

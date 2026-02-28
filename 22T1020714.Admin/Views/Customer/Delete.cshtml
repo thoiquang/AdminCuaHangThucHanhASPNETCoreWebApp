@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Xóa khách hàng";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-12">
+        <div class="card card-outline card-danger">
+            <div class="card-header">
+                <h5 class="card-title mb-0 text-danger">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    Xác nhận xóa khách hàng
+                </h5>
+            </div>
+
+            <div class="card-body">
+                <div class="alert alert-warning">
+                    <i class="bi bi-info-circle me-1"></i>
+                    Bạn đang chuẩn bị xóa khách hàng sau. Hành động này
+                    <strong>không thể hoàn tác</strong>.
+                </div>
+
+                <!-- Thông tin khách hàng -->
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th style="width: 200px;">Tên khách hàng</th>
+                            <td>Nguyễn Văn A</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Số điện thoại</th>
+                            <td>0908 123 456</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>a.nguyen@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Địa chỉ</th>
+                            <td>12 Trần Hưng Đạo</td>
+                        </tr>
+                        <tr>
+                            <th>Tỉnh / Thành</th>
+                            <td>Hà Nội</td>
+                        </tr>
+                        <tr>
+                            <th>Trạng thái</th>
+                            <td>
+                                <span class="badge bg-success">Hoạt động</span>
+                                <!-- hoặc -->
+                                <!-- <span class="badge bg-secondary">Bị khóa</span> -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Form xác nhận -->
+                <form method="post" class="d-flex justify-content-end">
+                    <!-- ID khách hàng -->
+                    <input type="hidden" name="CustomerId" value="1" />
+
+                    <a href="/Customer" class="btn btn-secondary me-2">
+                        <i class="bi bi-arrow-left"></i>
+                        Quay lại
+                    </a>
+
+                    <button type="submit" class="btn btn-danger">
+                        <i class="bi bi-trash me-1"></i>
+                        Xác nhận xóa
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Visual Studio Projects\\SV22T1020714\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|d:\\visual studio projects\\sv22t1020714\\22t1020714.admin\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|solutionrelative:22t1020714.admin\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|d:\\visual studio projects\\sv22t1020714\\22t1020714.admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|solutionrelative:22t1020714.admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE14691B-F817-4115-9B10-FCD24782C3DD}|Note{EE14691B-F817-4115-9B10-FCD24782C3DD}|D:\\Visual Studio Projects\\SV22T1020714\\log.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{EE14691B-F817-4115-9B10-FCD24782C3DD}|Note{EE14691B-F817-4115-9B10-FCD24782C3DD}|solutionrelative:log.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|d:\\visual studio projects\\sv22t1020714\\22t1020714.admin\\views\\order\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|solutionrelative:22t1020714.admin\\views\\order\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "log.md",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\log.md",
+              "RelativeDocumentMoniker": "log.md",
+              "ToolTip": "D:\\Visual Studio Projects\\SV22T1020714\\log.md",
+              "RelativeToolTip": "log.md",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:06:01.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Views\\Order\\Create.cshtml",
+              "RelativeDocumentMoniker": "22T1020714.Admin\\Views\\Order\\Create.cshtml",
+              "ToolTip": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Views\\Order\\Create.cshtml",
+              "RelativeToolTip": "22T1020714.Admin\\Views\\Order\\Create.cshtml",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAswKwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T07:02:35.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Views\\Order\\Delete.cshtml",
+              "RelativeDocumentMoniker": "22T1020714.Admin\\Views\\Order\\Delete.cshtml",
+              "ToolTip": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Views\\Order\\Delete.cshtml",
+              "RelativeToolTip": "22T1020714.Admin\\Views\\Order\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T07:00:35.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "22T1020714.Admin\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "22T1020714.Admin\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T07:00:19.396Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
