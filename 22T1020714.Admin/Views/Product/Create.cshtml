@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Cập nhật mặt hàng";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-12">
+        <div class="card card-outline card-primary">
+
+            <!-- HEADER -->
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-box-seam me-2"></i>
+                    Cập nhật mặt hàng
+                </h5>
+            </div>
+
+            <!-- BODY -->
+            <div class="card-body">
+                <form method="post">
+                    <div class="row">
+
+                        <!-- Tên hàng -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tên hàng</label>
+                            <input type="text"
+                                   name="ProductName"
+                                   class="form-control"
+                                   placeholder="Nhập tên mặt hàng"
+                                   required>
+                        </div>
+
+                        <!-- Đơn vị tính -->
+                        <div class="col-md-3 mb-3">
+                            <label class="form-label">Đơn vị tính</label>
+                            <input type="text"
+                                   name="Unit"
+                                   class="form-control"
+                                   placeholder="Ví dụ: Hộp, Chai..."
+                                   required>
+                        </div>
+
+                        <!-- Giá -->
+                        <div class="col-md-3 mb-3">
+                            <label class="form-label">Giá</label>
+                            <input type="number"
+                                   name="Price"
+                                   class="form-control"
+                                   min="0"
+                                   step="1000"
+                                   placeholder="0"
+                                   required>
+                        </div>
+
+                        <!-- Trạng thái -->
+                        <div class="col-md-4 mb-3">
+                            <label class="form-label">Trạng thái</label>
+                            <select name="IsActive"
+                                    class="form-select">
+                                <option value="true">Đang bán</option>
+                                <option value="false">Ngừng bán</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- ACTION -->
+                    <div class="d-flex justify-content-end mt-3">
+                        <a href="/Product"
+                           class="btn btn-secondary me-2">
+                            <i class="bi bi-arrow-left"></i>
+                            Quay lại
+                        </a>
+
+                        <button type="submit"
+                                class="btn btn-primary">
+                            <i class="bi bi-save me-1"></i>
+                            Lưu mặt hàng
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

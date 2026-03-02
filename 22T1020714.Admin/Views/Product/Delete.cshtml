@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Xóa mặt hàng";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="card card-outline card-danger">
+
+            <!-- HEADER -->
+            <div class="card-header">
+                <h5 class="card-title mb-0 text-danger">
+                    <i class="bi bi-exclamation-triangle me-2"></i>
+                    Xác nhận xóa mặt hàng
+                </h5>
+            </div>
+
+            <!-- BODY -->
+            <div class="card-body">
+
+                <!-- WARNING -->
+                <div class="alert alert-danger">
+                    <i class="bi bi-exclamation-circle me-2"></i>
+                    Bạn có chắc chắn muốn xóa mặt hàng này không?
+                    Hành động này không thể hoàn tác.
+                </div>
+
+                <!-- INFORMATION -->
+                <div class="row">
+
+                    <!-- Tên hàng -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">Tên hàng</label>
+                        <div class="form-control bg-light">
+                            Sữa tươi Vinamilk
+                        </div>
+                    </div>
+
+                    <!-- Đơn vị tính -->
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label fw-bold">Đơn vị tính</label>
+                        <div class="form-control bg-light">
+                            Hộp
+                        </div>
+                    </div>
+
+                    <!-- Giá -->
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label fw-bold">Giá</label>
+                        <div class="form-control bg-light text-end">
+                            25.000
+                        </div>
+                    </div>
+
+                    <!-- Trạng thái -->
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label fw-bold">Trạng thái</label>
+                        <div>
+                            <span class="badge bg-success">
+                                Đang bán
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ACTION BUTTONS -->
+                <form method="post">
+                    <div class="d-flex justify-content-end mt-3">
+
+                        <a href="/Product"
+                           class="btn btn-secondary me-2">
+                            <i class="bi bi-arrow-left"></i>
+                            Quay lại
+                        </a>
+
+                        <button type="submit"
+                                class="btn btn-danger">
+                            <i class="bi bi-trash me-1"></i>
+                            Xác nhận xóa
+                        </button>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

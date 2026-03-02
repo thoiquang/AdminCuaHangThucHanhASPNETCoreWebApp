@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Visual Studio Projects\\SV22T1020714\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE14691B-F817-4115-9B10-FCD24782C3DD}|Note{EE14691B-F817-4115-9B10-FCD24782C3DD}|D:\\Visual Studio Projects\\SV22T1020714\\log.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{EE14691B-F817-4115-9B10-FCD24782C3DD}|Note{EE14691B-F817-4115-9B10-FCD24782C3DD}|solutionrelative:log.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|d:\\visual studio projects\\sv22t1020714\\22t1020714.admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|solutionrelative:22t1020714.admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|d:\\visual studio projects\\sv22t1020714\\22t1020714.admin\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|solutionrelative:22t1020714.admin\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|d:\\visual studio projects\\sv22t1020714\\22t1020714.admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|solutionrelative:22t1020714.admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|d:\\visual studio projects\\sv22t1020714\\22t1020714.admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|solutionrelative:22t1020714.admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|d:\\visual studio projects\\sv22t1020714\\22t1020714.admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|solutionrelative:22t1020714.admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE14691B-F817-4115-9B10-FCD24782C3DD}|Note{EE14691B-F817-4115-9B10-FCD24782C3DD}|D:\\Visual Studio Projects\\SV22T1020714\\log.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{EE14691B-F817-4115-9B10-FCD24782C3DD}|Note{EE14691B-F817-4115-9B10-FCD24782C3DD}|solutionrelative:log.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|d:\\visual studio projects\\sv22t1020714\\22t1020714.admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +29,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|d:\\visual studio projects\\sv22t1020714\\22t1020714.admin\\views\\order\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|solutionrelative:22t1020714.admin\\views\\order\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|d:\\visual studio projects\\sv22t1020714\\22t1020714.admin\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9BD87DA-B916-4708-B1FA-2CFC02478CDD}|22T1020714.Admin\\22T1020714.Admin.csproj|solutionrelative:22t1020714.admin\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +42,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "log.md",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\log.md",
+              "RelativeDocumentMoniker": "log.md",
+              "ToolTip": "D:\\Visual Studio Projects\\SV22T1020714\\log.md",
+              "RelativeToolTip": "log.md",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-05T07:06:01.415Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "22T1020714.Admin\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "22T1020714.Admin\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAmwFUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-02T02:50:11.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "22T1020714.Admin\\Views\\Product\\Create.cshtml",
+              "ToolTip": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "22T1020714.Admin\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-02T02:49:29.096Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -51,19 +106,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "log.md",
-              "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\log.md",
-              "RelativeDocumentMoniker": "log.md",
-              "ToolTip": "D:\\Visual Studio Projects\\SV22T1020714\\log.md",
-              "RelativeToolTip": "log.md",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-02-05T07:06:01.415Z",
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "22T1020714.Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "22T1020714.Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T02:12:23.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "22T1020714.Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "22T1020714.Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-02T02:11:54.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Views\\Order\\Create.cshtml",
               "RelativeDocumentMoniker": "22T1020714.Admin\\Views\\Order\\Create.cshtml",
@@ -71,12 +139,11 @@
               "RelativeToolTip": "22T1020714.Admin\\Views\\Order\\Create.cshtml",
               "ViewState": "AgIAAI0AAAAAAAAAAAAswKwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-05T07:02:35.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T07:02:35.305Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Views\\Order\\Delete.cshtml",
               "RelativeDocumentMoniker": "22T1020714.Admin\\Views\\Order\\Delete.cshtml",
@@ -88,13 +155,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "OrderController.cs",
               "DocumentMoniker": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "22T1020714.Admin\\Controllers\\OrderController.cs",
               "ToolTip": "D:\\Visual Studio Projects\\SV22T1020714\\22T1020714.Admin\\Controllers\\OrderController.cs",
               "RelativeToolTip": "22T1020714.Admin\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T07:00:19.396Z"
             }

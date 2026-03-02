@@ -39,3 +39,4 @@ D:\Visual Studio Projects\SV22T1020714\22T1020714.Admin\obj\Debug\net8.0\refint\
 D:\Visual Studio Projects\SV22T1020714\22T1020714.Admin\obj\Debug\net8.0\22T1020714.Admin.pdb
 D:\Visual Studio Projects\SV22T1020714\22T1020714.Admin\obj\Debug\net8.0\22T1020714.Admin.genruntimeconfig.cache
 D:\Visual Studio Projects\SV22T1020714\22T1020714.Admin\obj\Debug\net8.0\ref\22T1020714.Admin.dll
+D:\Visual Studio Projects\SV22T1020714\22T1020714.Admin\obj\Debug\net8.0\22T1020714.Admin.sourcelink.json
