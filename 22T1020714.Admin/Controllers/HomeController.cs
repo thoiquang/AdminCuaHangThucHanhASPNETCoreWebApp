@@ -6,6 +6,9 @@ namespace _22T1020714.Admin.Controllers
 {
     public class HomeController : Controller
     {
+        /// <summary>
+        /// Dashboard 
+        /// </summary>
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)

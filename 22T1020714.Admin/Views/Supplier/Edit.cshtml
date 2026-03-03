@@ -1,89 +1,74 @@
 ﻿@{
-    ViewBag.Title = "Thông tin nhà cung cấp";
 }
+@section PageToolBar {
+    <button type="submit" form="formEdit" class="btn btn-primary">
+        <i class="bi bi-save"></i>
+        Lưu dữ liệu
+    </button>
 
+    <a href="~/Supplier" class="btn btn-secondary ms-1">
+        <i class="bi bi-arrow-left"></i>
+        Quay lại
+    </a>
+}
 <div class="row justify-content-center">
-    <div class="col-lg-12">
-        <div class="card card-outline card-primary">
+    <div class="col-12">
+        <div class="card card-primary card-outline">
             <div class="card-header">
                 <h5 class="card-title mb-0">
                     <i class="bi bi-truck me-2"></i>
-                    Nhập thông tin nhà cung cấp
+                    Thông tin nhà cung cấp
                 </h5>
             </div>
 
             <div class="card-body">
-                <form method="post">
+                <form id="formEdit" method="post">
+                    <div class="mb-3">
+                        <label class="form-label">Tên nhà cung cấp</label>
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Nhập tên nhà cung cấp" autofocus />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Tên giao dịch</label>
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Nhập tên giao dịch" />
+                    </div>
+
                     <div class="row">
-                        <!-- Tên nhà cung cấp -->
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">Tên nhà cung cấp</label>
-                            <input type="text"
-                                   name="SupplierName"
-                                   class="form-control"
-                                   placeholder="Nhập tên nhà cung cấp"
-                                   required />
-                        </div>
-
-                        <!-- Tên giao dịch -->
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">Tên giao dịch</label>
-                            <input type="text"
-                                   name="TradeName"
-                                   class="form-control"
-                                   placeholder="Nhập tên giao dịch" />
-                        </div>
-
-                        <!-- Điện thoại -->
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Điện thoại</label>
-                            <input type="text"
-                                   name="Phone"
+                            <input type="tel"
                                    class="form-control"
-                                   placeholder="Ví dụ: 0909 123 456" />
+                                   placeholder="Nhập số điện thoại" />
                         </div>
 
-                        <!-- Email -->
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Email</label>
                             <input type="email"
-                                   name="Email"
                                    class="form-control"
-                                   placeholder="example@email.com" />
-                        </div>
-
-                        <!-- Địa chỉ -->
-                        <div class="col-md-8 mb-3">
-                            <label class="form-label">Địa chỉ</label>
-                            <input type="text"
-                                   name="Address"
-                                   class="form-control"
-                                   placeholder="Nhập địa chỉ nhà cung cấp" />
-                        </div>
-
-                        <!-- Tỉnh / Thành -->
-                        <div class="col-md-4 mb-3">
-                            <label class="form-label">Tỉnh / Thành</label>
-                            <select name="Province" class="form-select">
-                                <option value="">-- Chọn tỉnh/thành --</option>
-                                <option>Hà Nội</option>
-                                <option>TP. Hồ Chí Minh</option>
-                                <option>Đà Nẵng</option>
-                                <option>Cần Thơ</option>
-                                <option>Hải Phòng</option>
-                            </select>
+                                   placeholder="Nhập email" />
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-end mt-3">
-                        <a href="~/Supplier" class="btn btn-secondary me-2">
-                            <i class="bi bi-arrow-left"></i>
-                            Quay lại
-                        </a>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="bi bi-save"></i>
-                            Lưu dữ liệu
-                        </button>
+                    <div class="mb-3">
+                        <label class="form-label">Địa chỉ</label>
+                        <textarea class="form-control"
+                                  rows="3"
+                                  placeholder="Nhập địa chỉ"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Tỉnh / Thành</label>
+                        <select class="form-select">
+                            <option value="">-- Chọn tỉnh / thành --</option>
+                            <option>Hà Nội</option>
+                            <option>TP. Hồ Chí Minh</option>
+                            <option>Đà Nẵng</option>
+                            <option>Cần Thơ</option>
+                        </select>
                     </div>
                 </form>
             </div>

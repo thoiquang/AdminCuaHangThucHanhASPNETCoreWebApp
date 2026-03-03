@@ -1,105 +1,99 @@
 ﻿@{
-    ViewBag.Title = "Thông tin nhân viên";
+}
+@section PageToolBar {
+    <button type="submit" form="formEdit" class="btn btn-primary">
+        <i class="bi bi-save"></i>
+        Lưu dữ liệu
+    </button>
+    <a href="~/Employee" class="btn btn-secondary ms-1">
+        <i class="bi bi-arrow-left"></i>
+        Quay lại
+    </a>
 }
 
 <div class="row justify-content-center">
-    <div class="col-lg-8">
-        <div class="card card-outline card-primary">
+    <div class="col-12">
+        <div class="card card-primary card-outline">
             <div class="card-header">
                 <h5 class="card-title mb-0">
                     <i class="bi bi-person-badge me-2"></i>
-                    Nhập thông tin nhân viên
+                    Thông tin nhân viên
                 </h5>
             </div>
 
             <div class="card-body">
-                <form method="post" enctype="multipart/form-data">
-                    <div class="row">
-                        <!-- Tên nhân viên -->
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">Tên nhân viên</label>
+                <form id="formEdit" method="post" enctype="multipart/form-data">
+
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label">Họ và tên</label>
+                        <div class="col-sm-5">
                             <input type="text"
-                                   name="EmployeeName"
                                    class="form-control"
-                                   placeholder="Nhập tên nhân viên"
-                                   required />
+                                   placeholder="Nhập họ và tên" autofocus />
                         </div>
-
-                        <!-- Ngày sinh -->
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">Ngày sinh</label>
-                            <input type="date"
-                                   name="BirthDate"
-                                   class="form-control" />
-                        </div>
-
-                        <!-- Điện thoại -->
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">Số điện thoại</label>
+                        <label class="col-sm-2 col-form-label text-end">Ngày sinh</label>
+                        <div class="col-sm-2">
                             <input type="text"
-                                   name="Phone"
-                                   class="form-control"
-                                   placeholder="Ví dụ: 0909 123 456" />
+                                   class="form-control date-picker" />
                         </div>
+                    </div>
 
-                        <!-- Email -->
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">Email</label>
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label">Địa chỉ</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control"
+                                      rows="3"
+                                      placeholder="Nhập địa chỉ"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label">Điện thoại</label>
+                        <div class="col-sm-2">
+                            <input type="tel"
+                                   class="form-control"
+                                   placeholder="Nhập số điện thoại" />
+                        </div>
+                        <label class="col-sm-1 col-form-label text-end">Email</label>
+                        <div class="col-sm-6">
                             <input type="email"
-                                   name="Email"
                                    class="form-control"
-                                   placeholder="example@email.com" />
+                                   placeholder="Nhập email" />
                         </div>
+                    </div>
 
-                        <!-- Địa chỉ -->
-                        <div class="col-md-12 mb-3">
-                            <label class="form-label">Địa chỉ</label>
-                            <input type="text"
-                                   name="Address"
-                                   class="form-control"
-                                   placeholder="Nhập địa chỉ nhân viên" />
-                        </div>
-
-                        <!-- Ảnh đại diện -->
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">Ảnh đại diện</label>
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label">Ảnh</label>
+                        <div class="col-sm-9">
                             <input type="file"
-                                   name="Photo"
                                    class="form-control"
-                                   accept="image/*" />
-                        </div>
-
-                        <!-- Trạng thái -->
-                        <div class="col-md-3 mb-3">
-                            <label class="form-label">Trạng thái</label>
-                            <select name="IsActive" class="form-select">
-                                <option value="true">Hoạt động</option>
-                                <option value="false">Ngừng hoạt động</option>
-                            </select>
-                        </div>
-
-                        <!-- Vai trò -->
-                        <div class="col-md-3 mb-3">
-                            <label class="form-label">Vai trò</label>
-                            <select name="Role" class="form-select">
-                                <option value="">-- Chọn vai trò --</option>
-                                <option value="Admin">Quản trị</option>
-                                <option value="Staff">Nhân viên</option>
-                                <option value="Manager">Quản lý</option>
-                            </select>
+                                   accept="image/*"
+                                   data-img-preview="imgPreview"
+                                   onchange="previewImage(this)" />
+                            <div class="mt-2">
+                                <img id="imgPreview"
+                                     src="~/images/employees/nophoto.png"
+                                     class="img-thumbnail"
+                                     style="max-height: 150px;" />
+                            </div>
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-end mt-3">
-                        <a href="~/Employee" class="btn btn-secondary me-2">
-                            <i class="bi bi-arrow-left"></i>
-                            Quay lại
-                        </a>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="bi bi-save"></i>
-                            Lưu dữ liệu
-                        </button>
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label">Trạng thái</label>
+                        <div class="col-sm-9">
+                            <div class="form-check form-switch mt-2">
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       id="IsWorking"
+                                       checked />
+                                <label class="form-check-label" for="IsWorking">
+                                    Đang làm việc
+                                </label>
+                            </div>
+                        </div>
                     </div>
+
                 </form>
             </div>
         </div>

@@ -1,145 +1,88 @@
 ﻿@{
-    ViewBag.Title = "Quản lý khách hàng";
+    ViewBag.Title = "Quản lý Khách hàng";
 }
-
-<!-- Thanh tìm kiếm + nút thêm mới -->
-<div class="row mb-2">
-    <div class="col-md-12">
-        <form method="get" class="d-flex">
-            <input type="text"
-                   name="searchValue"
-                   class="form-control me-2"
-                   placeholder="Nhập tên khách hàng cần tìm..." />
-
-            <button type="submit" class="btn btn-primary me-2">
-                <i class="bi bi-search"></i>
-                Tìm kiếm
-            </button>
-
-            <a href="/Customer/Create" class="btn btn-success">
-                <i class="bi bi-plus-circle"></i>
-                Thêm mới
-            </a>
+@section PageToolBar {
+    <a href="~/Customer/Create" class="btn btn-primary">
+        <i class="bi bi-plus-circle me-1"></i>
+        Bổ sung
+    </a>
+}
+<div class="card mb-3">
+    <div class="card-body">
+        <form id="formSearch">
+            <div class="input-group">
+                <input type="text"
+                       class="form-control"
+                       placeholder="Tên khách hàng..." autofocus />
+                <button class="btn btn-info d-flex align-items-center">
+                    <i class="bi bi-search me-1"></i>
+                </button>
+            </div>
         </form>
     </div>
 </div>
 
-<!-- Thông báo số kết quả -->
-<div class="row mb-2">
-    <div class="col-12">
-        <span class="text-muted">
-            Tìm thấy <strong>42</strong> khách hàng
-        </span>
-    </div>
+<div class="mb-2 text-muted">
+    Danh sách này có <strong>25</strong> khách hàng
 </div>
 
-<!-- Bảng danh sách khách hàng -->
 <div class="card">
-    <div class="card-body p-0">
+    <div class="card-body p-1">
         <table class="table table-bordered table-hover mb-0">
-            <thead class="table-light">
+            <thead class="table-secondary">
                 <tr>
                     <th>Tên khách hàng</th>
-                    <th>Số điện thoại</th>
+                    <th>Tên giao dịch</th>
+                    <th>Điện thoại</th>
                     <th>Email</th>
                     <th>Địa chỉ</th>
                     <th>Tỉnh / Thành</th>
-                    <th class="text-center">Trạng thái</th>
-                    <th class="text-center" style="width: 180px;">Thao tác</th>
+                    <th class="text-center" style="width:120px;">Trạng thái</th>
+                    <th class="text-center" style="width:100px;">Thao tác</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- Dữ liệu mẫu -->
-                <tr>
-                    <td>Nguyễn Văn A</td>
-                    <td>Nguyen A</td>
-                    <td>0908 123 456</td>
-                    <td>a.nguyen@gmail.com</td>
-                    <td>12 Trần Hưng Đạo</td>
-                    <td>Hà Nội</td>
-                    <td class="text-center">
-                        <span class="badge bg-success">Hoạt động</span>
-                    </td>
-                    <td class="text-center">
-                        <a href="/Customer/Edit/1"
-                           class="btn btn-sm btn-warning"
-                           title="Chỉnh sửa">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
-
-                        <a href="/Customer/ChangePassword/1"
-                           class="btn btn-sm btn-info"
-                           title="Đổi mật khẩu">
-                            <i class="bi bi-key"></i>
-                        </a>
-
-                        <a href="/Customer/Delete/1"
-                           class="btn btn-sm btn-danger"
-                           title="Xóa"
-                           onclick="return confirm('Bạn có chắc muốn xóa khách hàng này?');">
-                            <i class="bi bi-trash"></i>
-                        </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Trần Thị B</td>
-                    <td>Tran B</td>
-                    <td>0988 888 999</td>
-                    <td>b.tran@yahoo.com</td>
-                    <td>45 Nguyễn Huệ</td>
-                    <td>TP. Hồ Chí Minh</td>
-                    <td class="text-center">
-                        <span class="badge bg-secondary">Bị khóa</span>
-                    </td>
-                    <td class="text-center">
-                        <a href="/Customer/Edit/2"
-                           class="btn btn-sm btn-warning">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
-
-                        <a href="/Customer/ChangePassword/2"
-                           class="btn btn-sm btn-info">
-                            <i class="bi bi-key"></i>
-                        </a>
-
-                        <a href="/Customer/Delete/2"
-                           class="btn btn-sm btn-danger"
-                           onclick="return confirm('Bạn có chắc muốn xóa khách hàng này?');">
-                            <i class="bi bi-trash"></i>
-                        </a>
-                    </td>
-                </tr>
+                @for (int i = 1; i <= 10; i++)
+                {
+                    <tr>
+                        <td>Nguyễn Văn A</td>
+                        <td>A Trading</td>
+                        <td>0912345678</td>
+                        <td>a@gmail.com</td>
+                        <td>456 Nguyễn Huệ</td>
+                        <td>Hà Nội</td>
+                        <td class="text-center">
+                            <span class="badge bg-success">Hoạt động</span>
+                        </td>
+                        <td class="text-center text-nowrap">
+                            <a href="~/Customer/Edit/123" class="btn btn-sm btn-primary">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a href="~/Customer/Delete/123" class="btn btn-sm btn-danger">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                            <a href="~/Customer/ChangePassword/123" class="btn btn-sm btn-warning ms-2">
+                                <i class="bi bi-key"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
             </tbody>
         </table>
     </div>
-</div>
 
-<!-- Pagination -->
-<div class="row mt-3">
-    <div class="col-12 d-flex justify-content-center">
-        <nav>
-            <ul class="pagination">
-                <li class="page-item disabled">
-                    <a class="page-link">«</a>
-                </li>
-
-                <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
-                </li>
-
-                <li class="page-item">
-                    <a class="page-link" href="#">2</a>
-                </li>
-
-                <li class="page-item">
-                    <a class="page-link" href="#">3</a>
-                </li>
-
-                <li class="page-item">
-                    <a class="page-link" href="#">»</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="card-footer">
+        <!-- Pagination -->
+        <ul class="pagination justify-content-center">
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+        </ul>
     </div>
 </div>

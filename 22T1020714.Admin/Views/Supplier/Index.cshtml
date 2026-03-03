@@ -1,43 +1,35 @@
 ﻿@{
     ViewBag.Title = "Quản lý Nhà cung cấp";
 }
-
-<!-- Thanh tìm kiếm + nút thêm mới -->
-<div class="row mb-3">
-    <div class="col-md-12">
-        <form method="get" class="d-flex">
-            <input type="text"
-                   name="searchValue"
-                   class="form-control me-2"
-                   placeholder="Nhập tên nhà cung cấp cần tìm..." />
-
-            <button type="submit" class="btn btn-primary me-2">
-                <i class="bi bi-search"></i>
-                Tìm kiếm
-            </button>
-
-            <a href="~/Supplier/Create" class="btn btn-success">
-                <i class="bi bi-plus-circle"></i>
-                Thêm mới
-            </a>
+@section PageToolBar {
+    <a href="~/Supplier/Create" class="btn btn-primary d-flex align-items-center ms-1">
+        <i class="bi bi-plus-circle me-1"></i>
+        Bổ sung
+    </a>
+}
+<div class="card mb-3">
+    <div class="card-body">
+        <form id="formSearch">
+            <div class="input-group">
+                <input type="text"
+                       class="form-control"
+                       placeholder="Tên nhà cung cấp..." autofocus />
+                <button class="btn btn-info d-flex align-items-center">
+                    <i class="bi bi-search me-1"></i>
+                </button>
+            </div>
         </form>
     </div>
 </div>
 
-<!-- Thông báo số kết quả -->
-<div class="row mb-2">
-    <div class="col-12">
-        <span class="text-muted">
-            Tìm thấy <strong>25</strong> nhà cung cấp
-        </span>
-    </div>
+<div class="mb-2 text-muted">
+    Danh sách này có <strong>25</strong> nhà cung cấp
 </div>
 
-<!-- Bảng danh sách nhà cung cấp -->
 <div class="card">
-    <div class="card-body p-0">
+    <div class="card-body p-1">
         <table class="table table-bordered table-hover mb-0">
-            <thead class="table-light">
+            <thead class="table-secondary">
                 <tr>
                     <th>Tên nhà cung cấp</th>
                     <th>Tên giao dịch</th>
@@ -45,78 +37,47 @@
                     <th>Email</th>
                     <th>Địa chỉ</th>
                     <th>Tỉnh / Thành</th>
-                    <th class="text-center" style="width: 120px;">Thao tác</th>
+                    <th class="text-center" style="width:120px;">Thao tác</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- Dữ liệu mẫu – sau này foreach Model -->
-                <tr>
-                    <td>Công ty ABC</td>
-                    <td>ABC Trading</td>
-                    <td>0909 123 456</td>
-                    <td>contact@abc.com</td>
-                    <td>123 Lê Lợi, Quận 1</td>
-                    <td>TP. Hồ Chí Minh</td>
-                    <td class="text-center">
-                        <a href="~/Supplier/Edit/1" class="btn btn-sm btn-primary">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
-                        <a href="~/Supplier/Delete/1"
-                           class="btn btn-sm btn-danger"
-                           onclick="return confirm('Bạn có chắc muốn xóa nhà cung cấp này?');">
-                            <i class="bi bi-trash"></i>
-                        </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Công ty XYZ</td>
-                    <td>XYZ Co., Ltd</td>
-                    <td>028 3888 9999</td>
-                    <td>info@xyz.com</td>
-                    <td>45 Nguyễn Huệ</td>
-                    <td>Đà Nẵng</td>
-                    <td class="text-center">
-                        <a href="~/Supplier/Edit/2" class="btn btn-sm btn-warning">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
-                        <a href="~/Supplier/Delete/2"
-                           class="btn btn-sm btn-danger"
-                           onclick="return confirm('Bạn có chắc muốn xóa nhà cung cấp này?');">
-                            <i class="bi bi-trash"></i>
-                        </a>
-                    </td>
-                </tr>
+                @for (int i = 1; i <= 10; i++)
+                {
+                    <tr>
+                        <td>Công ty ABC</td>
+                        <td>ABC Trading</td>
+                        <td>0901234567</td>
+                        <td>contact@abc.com</td>
+                        <td>123 Lê Lợi</td>
+                        <td>TP. Hồ Chí Minh</td>
+                        <td class="text-center">
+                            <a href="~/Supplier/Edit/123" class="btn btn-sm btn-primary me-1">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <a href="~/Supplier/Delete/123" class="btn btn-sm btn-danger">
+                                <i class="bi bi-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
             </tbody>
         </table>
     </div>
-</div>
-
-<!-- Pagination -->
-<div class="row mt-3">
-    <div class="col-12 d-flex justify-content-center">
-        <nav>
-            <ul class="pagination">
-                <li class="page-item disabled">
-                    <a class="page-link">«</a>
-                </li>
-
-                <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
-                </li>
-
-                <li class="page-item">
-                    <a class="page-link" href="#">2</a>
-                </li>
-
-                <li class="page-item">
-                    <a class="page-link" href="#">3</a>
-                </li>
-
-                <li class="page-item">
-                    <a class="page-link" href="#">»</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="card-footer">
+        <!-- Pagination -->
+        <ul class="pagination justify-content-center">
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+        </ul>
     </div>
 </div>
+
+
+

@@ -1,83 +1,61 @@
 ﻿@{
     ViewBag.Title = "Xóa nhân viên";
 }
+@section PageToolBar {
+    <button type="submit" form="formDelete" class="btn btn-danger">
+        <i class="bi bi-trash"></i> Xóa
+    </button>
+    <a href="/Employee" class="btn btn-secondary ms-1">
+        <i class="bi bi-arrow-left"></i> Quay lại
+    </a>
+}
 
-<div class="row justify-content-center">
-    <div class="col-lg-12">
-        <div class="card card-outline card-danger">
-            <div class="card-header">
-                <h5 class="card-title mb-0 text-danger">
-                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
-                    Xác nhận xóa nhân viên
-                </h5>
+<div class="card card-danger">
+    <div class="card-header">
+        <h3 class="card-title">
+            <i class="bi bi-person-x"></i> Xác nhận xóa nhân viên
+        </h3>
+    </div>
+
+    <div class="card-body">
+        <form id="formDelete" method="post">
+            <div class="alert alert-warning">
+                <i class="bi bi-exclamation-triangle"></i>
+                Bạn có chắc chắn muốn xóa nhân viên này không?
             </div>
 
-            <div class="card-body">
-                <div class="alert alert-warning">
-                    <i class="bi bi-info-circle me-1"></i>
-                    Bạn đang chuẩn bị xóa nhân viên sau. Hành động này
-                    <strong>không thể hoàn tác</strong>.
+            <div class="row">
+                <div class="col-md-2 text-start">
+                    <img src="~/images/employees/nophoto.png"
+                         class="img-thumbnail mb-2"
+                         style="width: 100%;"
+                         alt="Ảnh nhân viên" />
                 </div>
 
-                <table class="table table-bordered">
-                    <tbody>
-                        <tr>
-                            <th style="width: 200px;">Ảnh đại diện</th>
-                            <td>
-                                <img src="~/images/avatar-default.png"
-                                     class="rounded-circle"
-                                     width="80"
-                                     height="80" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Tên nhân viên</th>
-                            <td>Nguyễn Văn A</td>
-                        </tr>
-                        <tr>
-                            <th>Ngày sinh</th>
-                            <td>15/08/1998</td>
-                        </tr>
-                        <tr>
-                            <th>Số điện thoại</th>
-                            <td>0909 123 456</td>
-                        </tr>
-                        <tr>
-                            <th>Email</th>
-                            <td>nguyenvana@email.com</td>
-                        </tr>
-                        <tr>
-                            <th>Địa chỉ</th>
-                            <td>123 Lê Lợi, Quận 1, TP. Hồ Chí Minh</td>
-                        </tr>
-                        <tr>
-                            <th>Trạng thái</th>
-                            <td>
-                                <span class="badge bg-success">Hoạt động</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Vai trò</th>
-                            <td>Quản trị</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="col-md-10">
+                    <dl class="row">
+                        <dt class="col-sm-3">Họ và tên:</dt>
+                        <dd class="col-sm-9">Nguyễn Văn A</dd>
 
-                <form method="post" class="d-flex justify-content-end">
-                    <!-- Ẩn ID nhân viên -->
-                    <input type="hidden" name="EmployeeId" value="1" />
+                        <dt class="col-sm-3">Ngày sinh:</dt>
+                        <dd class="col-sm-9">01/01/1990</dd>
 
-                    <a href="~/Employee" class="btn btn-secondary me-2">
-                        <i class="bi bi-arrow-left"></i>
-                        Quay lại
-                    </a>
+                        <dt class="col-sm-3">Điện thoại:</dt>
+                        <dd class="col-sm-9">0901234567</dd>
 
-                    <button type="submit" class="btn btn-danger">
-                        <i class="bi bi-trash me-1"></i>
-                        Xác nhận xóa
-                    </button>
-                </form>
+                        <dt class="col-sm-3">Email:</dt>
+                        <dd class="col-sm-9">vana@example.com</dd>
+
+                        <dt class="col-sm-3">Địa chỉ:</dt>
+                        <dd class="col-sm-9">Huế</dd>
+
+                        <dt class="col-sm-3">Trạng thái:</dt>
+                        <dd class="col-sm-9">
+                            <span class="badge bg-success">Đang làm việc</span>
+                        </dd>
+                    </dl>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 </div>

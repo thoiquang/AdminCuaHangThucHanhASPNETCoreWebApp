@@ -1,66 +1,51 @@
 ﻿@{
     ViewBag.Title = "Xóa nhà cung cấp";
 }
-
+@section PageToolBar {
+    <button type="submit" form="formDelete" class="btn btn-danger">
+        <i class="bi bi-trash me-1"></i>
+        Xóa
+    </button>
+    <a href="~/Supplier" class="btn btn-secondary ms-1">
+        <i class="bi bi-arrow-left"></i>
+        Quay lại
+    </a>
+}
 <div class="row justify-content-center">
-    <div class="col-lg-12">
-        <div class="card card-outline card-danger">
+    <div class="col-12">
+        <div class="card card-danger card-outline">
             <div class="card-header">
                 <h5 class="card-title mb-0 text-danger">
-                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    <i class="bi bi-exclamation-triangle me-2"></i>
                     Xác nhận xóa nhà cung cấp
                 </h5>
             </div>
 
             <div class="card-body">
-                <div class="alert alert-warning">
-                    <i class="bi bi-info-circle me-1"></i>
-                    Bạn đang chuẩn bị xóa nhà cung cấp sau. Hành động này
-                    <strong>không thể hoàn tác</strong>.
-                </div>
+                <form id="formDelete" method="post">
+                    <div class="alert alert-warning d-flex align-items-center">
+                        <i class="bi bi-info-circle me-2"></i>
+                        Bạn có chắc chắn muốn xóa nhà cung cấp sau không?
+                    </div>                    
+                    <dl class="row mb-0">
+                        <dt class="col-sm-4">Tên nhà cung cấp</dt>
+                        <dd class="col-sm-8">Công ty ABC</dd>
 
-                <table class="table table-bordered">
-                    <tbody>
-                        <tr>
-                            <th style="width: 200px;">Tên nhà cung cấp</th>
-                            <td>Công ty ABC</td>
-                        </tr>
-                        <tr>
-                            <th>Tên giao dịch</th>
-                            <td>ABC Trading</td>
-                        </tr>
-                        <tr>
-                            <th>Điện thoại</th>
-                            <td>0909 123 456</td>
-                        </tr>
-                        <tr>
-                            <th>Email</th>
-                            <td>contact@abc.com</td>
-                        </tr>
-                        <tr>
-                            <th>Địa chỉ</th>
-                            <td>123 Lê Lợi, Quận 1</td>
-                        </tr>
-                        <tr>
-                            <th>Tỉnh / Thành</th>
-                            <td>TP. Hồ Chí Minh</td>
-                        </tr>
-                    </tbody>
-                </table>
+                        <dt class="col-sm-4">Tên giao dịch</dt>
+                        <dd class="col-sm-8">ABC Trading</dd>
 
-                <form method="post" class="d-flex justify-content-end">
-                    <!-- Ẩn ID nhà cung cấp -->
-                    <input type="hidden" name="SupplierId" value="1" />
+                        <dt class="col-sm-4">Điện thoại</dt>
+                        <dd class="col-sm-8">0901234567</dd>
 
-                    <a href="~/Supplier" class="btn btn-secondary me-2">
-                        <i class="bi bi-arrow-left"></i>
-                        Quay lại
-                    </a>
+                        <dt class="col-sm-4">Email</dt>
+                        <dd class="col-sm-8">contact@abc.com</dd>
 
-                    <button type="submit" class="btn btn-danger">
-                        <i class="bi bi-trash me-1"></i>
-                        Xác nhận xóa
-                    </button>
+                        <dt class="col-sm-4">Địa chỉ</dt>
+                        <dd class="col-sm-8">123 Lê Lợi</dd>
+
+                        <dt class="col-sm-4">Tỉnh / Thành</dt>
+                        <dd class="col-sm-8">TP. Hồ Chí Minh</dd>
+                    </dl>
                 </form>
             </div>
         </div>

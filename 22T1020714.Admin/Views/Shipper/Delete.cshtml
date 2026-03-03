@@ -2,53 +2,44 @@
     ViewBag.Title = "Xóa người giao hàng";
 }
 
+@section PageToolBar {
+    <button type="submit" form="formDelete" class="btn btn-danger">
+        <i class="bi bi-trash me-1"></i>
+        Xóa
+    </button>
+
+    <a href="~/Shipper" class="btn btn-secondary ms-1">
+        <i class="bi bi-arrow-left"></i>
+        Quay lại
+    </a>
+}
+
 <div class="row justify-content-center">
-    <div class="col-lg-12">
-        <div class="card card-outline card-danger">
+    <div class="col-12">
+        <div class="card card-danger card-outline">
             <div class="card-header">
                 <h5 class="card-title mb-0 text-danger">
-                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    <i class="bi bi-exclamation-triangle me-2"></i>
                     Xác nhận xóa người giao hàng
                 </h5>
             </div>
 
             <div class="card-body">
-                <div class="alert alert-warning">
-                    <i class="bi bi-info-circle me-1"></i>
-                    Bạn đang chuẩn bị xóa người giao hàng sau. Hành động này
-                    <strong>không thể hoàn tác</strong>.
-                </div>
+                <form id="formDelete" method="post">
 
-                <!-- Thông tin người giao hàng -->
-                <table class="table table-bordered">
-                    <tbody>
-                        <tr>
-                            <th style="width: 200px;">Tên người giao hàng</th>
-                            <td>Giao hàng nhanh</td>
-                        </tr>
-                        <tr>
-                            <th>Số điện thoại</th>
-                            <td>1900 636 677</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <div class="alert alert-warning d-flex align-items-center">
+                        <i class="bi bi-info-circle me-2"></i>
+                        Bạn có chắc chắn muốn xóa người giao hàng sau không?
+                    </div>
 
-                <!-- Form xác nhận -->
-                <form method="post" class="d-flex justify-content-end">
-                    <!-- ID người giao hàng -->
-                    <input type="hidden" name="ShipperId" value="1" />
+                    <dl class="row mb-0">
+                        <dt class="col-sm-4">Tên người giao hàng</dt>
+                        <dd class="col-sm-8">Trần Văn B</dd>
 
-                    <a href="~/Shipper"
-                       class="btn btn-secondary me-2">
-                        <i class="bi bi-arrow-left"></i>
-                        Quay lại
-                    </a>
+                        <dt class="col-sm-4">Điện thoại</dt>
+                        <dd class="col-sm-8">0912345678</dd>
+                    </dl>
 
-                    <button type="submit"
-                            class="btn btn-danger">
-                        <i class="bi bi-trash me-1"></i>
-                        Xác nhận xóa
-                    </button>
                 </form>
             </div>
         </div>
